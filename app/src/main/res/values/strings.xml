@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Stockholm Guider</string>
+    <string name="image_contentDescription">image</string>
+    <string name="let_s_get_started_text">Lets Get start</string>
+    <string name="intro_text_description">Collaborate and Plan Together Across Multiple Devices on Projemanag’s Minimalist Interface.</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_up">SIGN UP</string>
+
+    <string name="sign_up_description_text">Enter your name, email id and password, to register with us.</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+
+    <string name="sign_in_description_text">Enter your name, email id and password, to register with us.</string>
+
+    <string name="please_click_back_again_to_exit">Please click back again to exit.</string>
+    <string name="please_wait">Please Wait&#8230;</string>
+
+    <string name="nav_my_profile">My Profile</string>
+    <string name="nav_sign_out">Sign Out</string>
+
+    <string name="mobile">Mobile</string>
+    <string name="update">UPDATE</string>
+    <string name="my_profile">My Profile</string>
+
+    <string name="explore_stockholm">Explore Stockholm</string>
+    <string name="start_explore">Start Exploring</string>
+    <string name="top_tourist_destinations">Top Tourist Destinations</string>
+    <string name="top_tourist_attractions">Top Tourist Attractions</string>
+    <string name="see_all">See All</string>
+    <string name="link_seeall"><a href="">See All</a></string>
+    <string name="drottninggata_street_name">Drottninggatan</string>
+    <string name="royal_museum">Royal Museum</string>
+
+    <string name="city_detail_description">Description</string>
+    <string name="city_detail_description_here">Description here</string>
+    <string name="city_detail_approx_trip_duration">Approx. Trip Duration</string>
+    <string name="city_detail_best_time">January to February</string>
+    <string name="three_to_five_days">3 to 5 days</string>
+    <string name="best_time_to_visit">Best Time to Visit</string>
+    <string name="get_location">Get Location</string>
+    <string name="tourist_attractions">TOURIST ATTRACTIONS</string>
+    <string name="high_intereaction">High interaction during last year</string>
+    <string name="low_interaction">Low interaction during this year</string>
+
+
+    <string name="overview">Overview</string>
+    <string name="default_notification_channel_id">cometostockholm_notification_channel_id</string>
+
+</resources>

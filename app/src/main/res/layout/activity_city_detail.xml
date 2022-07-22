@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CityDetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="40dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeableImageView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/city_detail_top_image_height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/modernamuseum"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeableImageView_BOTTOMRoundedCorners" />
+
+        <TextView
+            android:id="@+id/textview_city_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/royal_museum"
+            android:textColor="@color/black"
+            android:textSize="@dimen/city_detail_top_header_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shapeableImageView" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/overview"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/city_detail_overview_text_size"
+            app:layout_constraintStart_toStartOf="@+id/textview_city_name"
+            app:layout_constraintTop_toBottomOf="@+id/textview_city_name" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/tourist_attractions"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/city_detail_overview_text_size"
+            app:layout_constraintStart_toStartOf="@+id/button_city_details_get_location"
+            app:layout_constraintTop_toBottomOf="@+id/button_city_details_get_location" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/city_detail_description"
+            android:textColor="@color/black"
+            android:textSize="@dimen/city_detail_descriptions_text_size"
+            app:layout_constraintStart_toStartOf="@+id/divider"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+        <TextView
+            android:id="@+id/textView_city_detail_place1_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/city_detail_description"
+            android:textColor="@color/black"
+            android:textSize="@dimen/city_detail_descriptions_text_size"
+            app:layout_constraintStart_toEndOf="@+id/shapeableImageView_city_detail_place1"
+            app:layout_constraintTop_toTopOf="@+id/shapeableImageView_city_detail_place1" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/city_detail_description"
+            android:textColor="@color/black"
+            android:textSize="@dimen/city_detail_descriptions_text_size"
+            app:layout_constraintStart_toEndOf="@+id/shapeableImageView_city_detail_place1"
+            app:layout_constraintTop_toTopOf="@+id/shapeableImageView3" />
+
+        <TextView
+            android:id="@+id/textView_city_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/city_detail_description_here"
+            android:textColor="#CC000000"
+            android:textSize="@dimen/city_detail_descriptions_text_size"
+            app:layout_constraintEnd_toEndOf="@+id/divider"
+            app:layout_constraintStart_toStartOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/textView_city_details2"
+            android:layout_width="259dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/low_interaction"
+            android:textColor="#CC000000"
+            android:textSize="@dimen/city_detail_descriptions_text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/shapeableImageView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView17"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        <TextView
+            android:id="@+id/textView_city_details_place1_description"
+            android:layout_width="259dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/high_intereaction"
+            android:textColor="#CC000000"
+            android:textSize="@dimen/city_detail_descriptions_text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/shapeableImageView_city_detail_place1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView_city_detail_place1_name"
+            app:layout_constraintTop_toBottomOf="@+id/textView_city_detail_place1_name" />
+
+        <TextView
+            android:id="@+id/textView_city_details3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/city_detail_description_here"
+            android:textColor="#CC000000"
+            android:textSize="@dimen/city_detail_descriptions_text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/shapeableImageView_city_detail_place1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView_city_detail_place1_name"
+            app:layout_constraintTop_toBottomOf="@+id/textView17"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView_city_detail_trip_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/three_to_five_days"
+            android:textColor="@color/black"
+            android:textSize="@dimen/city_detail_descriptions_text_size"
+            app:layout_constraintStart_toStartOf="@+id/textView_city_details"
+            app:layout_constraintTop_toBottomOf="@+id/textView_city_details" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/city_detail_approx_trip_duration"
+            android:textColor="#CC000000"
+            android:textSize="@dimen/city_detail_descriptions_text_size"
+            app:layout_constraintStart_toStartOf="@+id/textView_city_detail_trip_duration"
+            app:layout_constraintTop_toBottomOf="@+id/textView_city_detail_trip_duration" />
+
+        <TextView
+            android:id="@+id/textView_ctiy_detail_best_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/city_detail_best_time"
+            android:textColor="@color/black"
+            android:textSize="@dimen/city_detail_descriptions_text_size"
+            app:layout_constraintStart_toStartOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/best_time_to_visit"
+            android:textColor="#CC000000"
+            android:textSize="@dimen/city_detail_descriptions_text_size"
+            app:layout_constraintStart_toStartOf="@+id/textView_ctiy_detail_best_time"
+            app:layout_constraintTop_toBottomOf="@+id/textView_ctiy_detail_best_time" />
+
+        <Button
+            android:id="@+id/button_city_details_get_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/shape_button_rounded"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/get_location"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeableImageView_city_detail_place1"
+            android:layout_width="@dimen/city_detail_shapable_image_view_dimensions"
+            android:layout_height="@dimen/city_detail_shapable_image_view_dimensions"
+            android:layout_marginTop="24dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/abbathemuseum"
+            app:layout_constraintStart_toStartOf="@+id/divider2"
+            app:layout_constraintTop_toBottomOf="@+id/divider2"
+            app:shapeAppearanceOverlay="@style/ShapeableImageView_AllRoundedCorners" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeableImageView3"
+            android:layout_width="@dimen/city_detail_shapable_image_view_dimensions"
+            android:layout_height="@dimen/city_detail_shapable_image_view_dimensions"
+            android:layout_marginTop="32dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cityhall"
+            app:layout_constraintStart_toStartOf="@+id/divider2"
+            app:layout_constraintTop_toBottomOf="@+id/shapeableImageView_city_detail_place1"
+            app:shapeAppearanceOverlay="@style/ShapeableImageView_AllRoundedCorners" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

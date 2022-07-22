@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "964362674255",
+    "firebase_url": "https://cometostockholm-483ef-default-rtdb.firebaseio.com",
+    "project_id": "cometostockholm-483ef",
+    "storage_bucket": "cometostockholm-483ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964362674255:android:afb2f13faf18b0f1f5ca3a",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "964362674255-g684422sj5aveetuompt6gelkf10405l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3E0wzwACP6jONGQ97foFd1GtoQbMPFxk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "964362674255-g684422sj5aveetuompt6gelkf10405l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
